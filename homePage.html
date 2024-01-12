@@ -17,14 +17,19 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-              window.addEventListener("scroll", function () {
-                const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-                const brightness = 1 - (scrollPercentage / 100) * 0.6; /* Adjust the multiplier as needed */
-        
-                document.body.style.filter = `brightness(${brightness})`;
-              });
+                const mainLogo = document.getElementById("mainLogo");
+    
+                if (mainLogo) { // Check if the element with ID "mainLogo" exists
+                    window.addEventListener("scroll", function () {
+                        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                        const brightness = 1 - (scrollPercentage / 100) * 0.7; /* Adjust the multiplier as needed */
+    
+                        mainLogo.style.filter = `brightness(${brightness})`;
+                    });
+                }
             });
-          </script>
+        </script>
+
             <!--<h1 class="mainTitle">PERIRNET EXPLORER</h1>-->
             <!--<nav>
                 <ul>
@@ -76,7 +81,7 @@
               </div>-->
               <a href="index.html">
                 <img src = "Assets/transparentGif.gif" alt = "TestImage" height = "auto" width = "5%"/></a>
-              <img src = "Assets/delverLogo.png" class="center">
+              <img src = "Assets/delverLogo.png" class="center" id="mainLogo">
         </main>
         
         <div class="grid-container">
