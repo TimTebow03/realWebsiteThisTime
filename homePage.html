@@ -22,7 +22,7 @@
                 if (mainLogo) { // Check if the element with ID "mainLogo" exists
                     window.addEventListener("scroll", function () {
                         const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-                        const brightness = 1 - (scrollPercentage / 100) * 0.7; /* Adjust the multiplier as needed */
+                        const brightness = 1 - (scrollPercentage / 100) * 0.9; /* Adjust the multiplier as needed */
     
                         mainLogo.style.filter = `brightness(${brightness})`;
                     });
