@@ -4,10 +4,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Add scrollbar to the entire page */
+            body {
+              overflow: auto; /* This property enables the scrollbar */
+            }
+          </style>
         <title>virtualGallery</title>
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              window.addEventListener("scroll", function () {
+                const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                const brightness = 1 - (scrollPercentage / 100) * 0.6; /* Adjust the multiplier as needed */
+        
+                document.body.style.filter = `brightness(${brightness})`;
+              });
+            });
+          </script>
             <!--<h1 class="mainTitle">PERIRNET EXPLORER</h1>-->
             <!--<nav>
                 <ul>
@@ -39,6 +56,7 @@
                     </div>
                 </ul>
             </nav> -->
+        
         <main>  
 
             <!--<h2>A site for everyone!</h2>-->
@@ -61,7 +79,7 @@
               <img src = "Assets/delverLogo.png" class="center">
         </main>
         
-        <!--<div class="grid-container">
+        <div class="grid-container">
             <div class="grid-item grid-item-1"> 
                 <a href="tetohundred.html">
                 <img src = "pfp/felix.png" alt = "letterT" height="10%" width="10%"/>    
@@ -98,6 +116,114 @@
             <div class="grid-item grid-item-7">
               
             </div>
-          </div>-->
+            <div class="grid-item grid-item-1"> 
+                <a href="tetohundred.html">
+                <img src = "pfp/felix.png" alt = "letterT" height="10%" width="10%"/>    
+                <figcaption>TetoHundred</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-2">
+                <a href="Araneiform.html">
+                <img src = "pfp/araneiform.png" alt = "letterA" height="10%" width="10%"/>
+                <figcaption>Aranieform</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-3">
+                <a href="abstractAmbiences.html">
+                <img src = "pfp/abstractAmbiences.png" alt = "letterAa" height="10%" width="10%"/>
+                <figcaption>Abstract Ambiences</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-4">
+                <a href="catpawe.html">
+                <img src = "pfp/catpawe.png" alt = "letterC" height="10%" width="10%"/>
+                <figcaption>Catpawe</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-5">
+                <a href="bimbecile2.html">
+                <img src = "pfp/bimbecile2.png" alt = "letterC" height="10%" width="10%"/>
+                <figcaption>Bimbecile2</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-6">
+            
+            </div>
+            <div class="grid-item grid-item-7">
+              
+            </div>
+            <div class="grid-item grid-item-1"> 
+                <a href="tetohundred.html">
+                <img src = "pfp/felix.png" alt = "letterT" height="10%" width="10%"/>    
+                <figcaption>TetoHundred</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-2">
+                <a href="Araneiform.html">
+                <img src = "pfp/araneiform.png" alt = "letterA" height="10%" width="10%"/>
+                <figcaption>Aranieform</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-3">
+                <a href="abstractAmbiences.html">
+                <img src = "pfp/abstractAmbiences.png" alt = "letterAa" height="10%" width="10%"/>
+                <figcaption>Abstract Ambiences</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-4">
+                <a href="catpawe.html">
+                <img src = "pfp/catpawe.png" alt = "letterC" height="10%" width="10%"/>
+                <figcaption>Catpawe</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-5">
+                <a href="bimbecile2.html">
+                <img src = "pfp/bimbecile2.png" alt = "letterC" height="10%" width="10%"/>
+                <figcaption>Bimbecile2</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-6">
+            
+            </div>
+            <div class="grid-item grid-item-7">
+              
+            </div>
+            <div class="grid-item grid-item-1"> 
+                <a href="tetohundred.html">
+                <img src = "pfp/felix.png" alt = "letterT" height="10%" width="10%"/>    
+                <figcaption>TetoHundred</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-2">
+                <a href="Araneiform.html">
+                <img src = "pfp/araneiform.png" alt = "letterA" height="10%" width="10%"/>
+                <figcaption>Aranieform</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-3">
+                <a href="abstractAmbiences.html">
+                <img src = "pfp/abstractAmbiences.png" alt = "letterAa" height="10%" width="10%"/>
+                <figcaption>Abstract Ambiences</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-4">
+                <a href="catpawe.html">
+                <img src = "pfp/catpawe.png" alt = "letterC" height="10%" width="10%"/>
+                <figcaption>Catpawe</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-5">
+                <a href="bimbecile2.html">
+                <img src = "pfp/bimbecile2.png" alt = "letterC" height="10%" width="10%"/>
+                <figcaption>Bimbecile2</figcaption>
+                </a>
+            </div>
+            <div class="grid-item grid-item-6">
+            
+            </div>
+            <div class="grid-item grid-item-7">
+              
+            </div>
+          </div>
     </body>
     </html>

@@ -22,12 +22,21 @@ nav ul li {
 }
 
 
+
 body {
   background-image: url("greenBackground.png");
-  background-image: url("Assets/watergif3\(2\).gif");
-  
+  background-image: url("Assets/greyScaleWaterGif.gif");
+  /*background-size: cover;*/
+  background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+  transition: filter 0.1s ease; /* Smooth transition for the filter property */
   background-color: #0099ff;
+  background: linear-gradient(to bottom, rgba(26, 51, 51, 0.8), rgba(255, 255, 255, 0.9)), url("Assets/greyScaleWaterGif2.gif");
 }
+
+.darken {
+  filter: brightness(0.6); /* Adjust the brightness as needed */
+}
+
 .center {
   display: block;
   margin-left: auto;
