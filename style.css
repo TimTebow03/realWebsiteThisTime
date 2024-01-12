@@ -74,3 +74,28 @@ body {
   width: 100%;
 }
 
+/*CHAT GPT BOARDER CODE*/
+.image-container {
+  position: relative;
+  display: inline-block;
+  padding: 10px; /* Adjust this value based on your actual border size */
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("Assets/boarders.png") center center no-repeat;
+  background-size: 170% 170%; /* Adjust this property */
+  z-index: -1;
+  /*border: 2px solid red;*/
+}
